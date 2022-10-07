@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/16931c47ab.js" crossorigin="anonymous"></script>
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <header id="header" class="w-screen h-full flex items-center py-4 fondo-aside">
+        <h1 class="text-2xl pl-2 ">Logo</h1>
+        <div class="mx-auto">
+            <button id="btnDarkMode" class="rounded-xl lampara">
+                <i class="fa-solid fa-sun"></i>
+                <!-- <i class="fa-solid fa-moon"></i> -->
+            </button>
+        </div>
+        <ul class="flex pr-6">
+            <li class="pr-8 text-lg">Home</li>
+            <li class="pr-8 text-lg">Products</li>
+            <li class="pr-8 text-lg">About</li>
+            <li class="pr-8 text-lg">Contact</li>
+            <li class="pr-8 text-lg">
+                <button id="cart" class="rounded-xl">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </li>
+        </ul>
+
+    </header>
+
+    
+    <section id="section" class="w-screen h-full pt-4 ">
+        <div id="mostrarProductos" class="w-4/5 mx-auto h-full grid grid sm:grid-cols-2 md:grid-cols-3 gap-4 pb-4">
+            
+        </div>
+    </section>
+
+    <!-- side cart -->
+    <aside id="aside" class="hidden fixed top-0 right-0 w-[300px] h-screen z-10 duration-300 fondo-aside">
+        <div class="flex justify-between items-center">
+            <h2 class="text-2xl p-4">
+                Lo <span class="font-bold">Go</span>
+            </h2>
+            <button id="close" class="mr-4 px-4">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="border-b-2 border-red-500">
+            <h2 class="pl-4">Agregado al Carrito</h2>
+        </div>
+        <div id="Agregado" class="flex justify-between items-center px-4">
+            <img src="#" alt="">
+            <h3>Title</h3>
+            <h3>price:</h3>
+        </div>
+    </aside>
+
+
+
+    <!-- clase -->
+    <script src="./js/clase.js"></script>
+    <!-- main js -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
